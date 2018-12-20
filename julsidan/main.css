@@ -1,0 +1,160 @@
+body{
+    background-color: green;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.header{
+    background-color: red;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+}
+
+.nav{
+    width: 200px;
+    height: 400px;
+    background-color: lightgreen;
+    z-index: 10;
+    top: 0;
+    position: fixed;
+    left: -100%;
+    transition: left 0.3s;
+}
+
+ul{
+    padding-top: 30px;
+    
+}
+
+
+li{
+    margin: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 27px;
+    
+}
+
+.menu{
+    cursor: pointer;
+    
+}
+
+.activate{
+    left: 0;
+    
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0,5);
+    display: none;
+    z-index: 5;
+}
+
+.icon{
+    background-color: black;
+    justify-content: center;
+    display: inline;
+}
+
+.head{
+    background-color: green;
+    width: 100%;
+    height: 200px;
+
+}
+
+.main{
+    background-color: white;
+    width: 80%;
+    height: 700px;
+    display: grid;
+    margin: auto;
+    grid-gap: 25px;
+    grid-row-gap: 20px;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-areas: 
+    "bild1 kort1"
+    "bild2 kort2"
+    "bild3 kort3"
+    "bild4 kort4"
+    "bild5 kort5"
+    "bild6 kort6"
+    
+}
+
+.footer{
+    background-color: green;
+    width: 100%;
+    height: 100px;
+}
+
+.bild{
+    margin: 10px;
+    box-shadow:  14px 13px 39px -8px rgba(0,0,0,0.75);
+    
+}
+
+
+
+.kort{
+    background-color: hotpink;
+    box-shadow: 14px 13px 39px -8px rgba(0,0,0,0.75);
+    margin: 10px;
+}
+
+#bild1{
+    grid-area: bild1;
+}
+
+#kort1{
+    grid-area: kort1;
+}
+
+#bild2{
+    grid-area: bild2;
+}
+
+#kort2{
+    grid-area: kort2;
+}
+
+#bild3{
+    grid-area: bild3;
+}
+
+#kort3{
+    grid-area: kort3;
+}
+
+#bild4{
+    grid-area: bild4;
+}
+
+#kort4{
+    grid-area: kort4;
+}
+
+#bild5{
+    grid-area: bild5;
+}
+
+#kort5{
+    grid-area: kort5;
+}
+
+#bild6{
+    grid-area: bild6;
+}
+
+#kort6{
+    grid-area: kort6;
+}
+
