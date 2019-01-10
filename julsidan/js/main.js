@@ -4,3 +4,9 @@ function menu (event){
     menu.classList.toggle("activate")
 
 }
+
+function to_box (event){
+
+    let menu = document.querySelector(".do_box")
+    menu.classList.toggle("activate")
+}

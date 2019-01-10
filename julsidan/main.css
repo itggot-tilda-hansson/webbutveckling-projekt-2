@@ -12,6 +12,15 @@ body{
     position: fixed;
 }
 
+a{
+   color: black;
+   text-decoration-line: none;
+}
+
+a:hover{
+    color: white;
+}
+
 .nav{
     width: 200px;
     height: 400px;
@@ -35,18 +44,18 @@ li{
     font-size: 27px;
     
 }
-
+/* 
 .menu{
     cursor: pointer;
     
-}
+} */
 
 .activate{
     left: 0;
     
 }
 
-.fade-layer{
+/* .fade-layer{
     position: fixed;
     top: 0;
     left: 0;
@@ -55,13 +64,14 @@ li{
     background-color: rgba(0,0,0,0,5);
     display: none;
     z-index: 5;
-}
+} */
 
-.icon{
+/* .icon{
     background-color: black;
     justify-content: center;
     display: inline;
-}
+
+} */
 
 .head{
     background-color: green;
@@ -70,7 +80,7 @@ li{
 
 }
 
-.main{
+#main{
     background-color: white;
     width: 80%;
     height: 700px;
@@ -88,6 +98,21 @@ li{
     "bild5 kort5"
     "bild6 kort6"
     
+}
+
+.main{
+    width: 80%;
+    height: 700px;
+    display: grid;
+    margin: auto;
+    background-color: white;
+    grid-template-columns: auto auto;
+    grid-template-rows: 70px 630px;
+    grid-template-areas: 
+    "saker to_do"
+    "do_box do_box"
+    
+
 }
 
 .footer{
@@ -156,5 +181,38 @@ li{
 
 #kort6{
     grid-area: kort6;
+}
+
+h4{
+    justify-content: center;
+    margin: 15px;
+}
+
+.to_do{
+    background-color: red;
+    grid-area: to_do;
+    text-align: center;
+    margin: 20px;
+
+    
+   
+
+}
+
+.saker{
+    background-color: red;
+    grid-area: saker;
+    margin: 20px;
+    text-align: center;
+    
+    
+}
+
+.do_box{
+    background-color: grey;
+    grid-area: do_box;
+    margin: 20px;
+    left: -100%;
+
 }
 
