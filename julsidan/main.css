@@ -1,15 +1,17 @@
 body{
-    background-color: green;
+    background-color: rgb(102,109,117);
     width: 100vw;
     height: 100vh;
     margin: 0;
 }
 
 .header{
-    background-color: red;
+    background-color: rgb(79, 97, 47);
     width: 100%;
     height: 70px;
     position: fixed;
+    display: flex;
+    justify-content: center;
 }
 
 a{
@@ -24,31 +26,21 @@ a:hover{
 .nav{
     width: 200px;
     height: 400px;
-    background-color: lightgreen;
+    background-image: url(site/img/nav.julpsd.jpg);
     z-index: 10;
     top: 0;
     position: fixed;
     left: -100%;
-    transition: left 0.3s;
+    transition: left 0.7s;
 }
 
 ul{
     padding-top: 30px;
-    
-}
-
-
-li{
     margin: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 27px;
-    
 }
-/* 
-.menu{
-    cursor: pointer;
-    
-} */
+
 
 .activate{
     left: 0;
@@ -66,12 +58,7 @@ li{
     z-index: 5;
 } */
 
-/* .icon{
-    background-color: black;
-    justify-content: center;
-    display: inline;
 
-} */
 
 .head{
     background-color: green;
@@ -102,21 +89,17 @@ li{
 
 .main{
     width: 80%;
-    height: 700px;
-    display: grid;
+    height: 1300px;;
     margin: auto;
     background-color: white;
-    grid-template-columns: auto auto;
-    grid-template-rows: 70px 630px;
-    grid-template-areas: 
-    "saker to_do"
-    "do_box do_box"
+    
+    
     
 
 }
 
 .footer{
-    background-color: green;
+    background-color: rgb(102,109,117);
     width: 100%;
     height: 100px;
 }
@@ -130,7 +113,7 @@ li{
 
 
 .kort{
-    background-color: hotpink;
+    background-color: rgb(79, 97, 47);
     box-shadow: 14px 13px 39px -8px rgba(0,0,0,0.75);
     margin: 10px;
 }
@@ -186,33 +169,105 @@ li{
 h4{
     justify-content: center;
     margin: 15px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .to_do{
-    background-color: red;
-    grid-area: to_do;
+    background-color: rgb(79, 97, 47);
     text-align: center;
-    margin: 20px;
-
+    height: 50px;
+    width: 110px;
+    margin: 30px;
+    color: white;
     
-   
 
 }
 
 .saker{
-    background-color: red;
-    grid-area: saker;
-    margin: 20px;
+    background-color: rgb(79, 97, 47);
     text-align: center;
+    height: 50px;
+    width: 110px;
+    margin: 30px;
+    color: white;
+    justify-content: center;
+
     
-    
+
 }
 
 .do_box{
-    background-color: grey;
-    grid-area: do_box;
-    margin: 20px;
-    left: -100%;
+    height: auto;
+    width: 250px;
+    background-color: lightblue;
+    margin: auto;
+    padding: 10px;
+    
+
 
 }
 
+.saker_box{
+    height: auto;
+    width: 250px;
+    background-color: lightblue;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.text5{
+    font-size: 100px;
+}
+
+i.material-icons{
+    font-size: 35px;
+    padding-left: 10px;
+    position: absolute;
+    left: 0;
+}
+
+ol{
+    font-size: 17px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+h5{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.peppar{
+    background-image: url(site/img/peppar.jpg);
+    height: 100px;
+    width: 100px;
+    margin-left: 170px;
+    margin-top: 10px;
+}
+
+.skumtomte{
+    background-image: url(site/img/liteskum.jpg);
+    height: 100px;
+    width: 100px;
+    margin-left: 170px;
+    margin-top: 10px;
+}
+
+
+
+@media only screen and (min-device-width:768px){
+
+    .head{
+        background-image: url(site/img/header.webb.jpg)
+    }
+}
